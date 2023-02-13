@@ -6,7 +6,7 @@
 
 
     $query = "INSERT INTO phones (category, title, description, price, phonenumber, location, image_path)
-    VALUES('category', 'title', 'description', 'price', 'phonenumber', 'location', 'image_path')";
+    VALUES('category', 'title', 'description', price, 'phonenumber', 'location', 'image_path')";
   
   ?>
  
