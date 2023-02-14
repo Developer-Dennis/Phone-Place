@@ -2,12 +2,19 @@
   include('navbar.php');
   include('connection.php');
 
+  $category = $_POST['category'];
+  $title = $_POST['title'];
+  $description = $_POST['description'];
+  $price = $_POST['price'];
+  $phonenumber = $_POST['phonenumber'];
+  $location = $_POST['location'];
+  $productimage = $_POST['productimage']; 
+
+    $query = "INSERT INTO phones (category, title, description, price, phonenumber, location, productimage)
+    VALUES('$category','$title', '$description', '$price','$phonenumber','$productimage');";
+
+
    
-
-
-    $query = "INSERT INTO phones (category, title, description, price, phonenumber, location, image_path)
-    VALUES('category', 'title', 'description', price, 'phonenumber', 'location', 'image_path')";
-  
   ?>
  
 
@@ -63,7 +70,7 @@
     </div>
     <div class="input-group">
         <label>Images:</label>
-        <input type="file" name="product-image" id="upload" multiple><br>
+        <input type="file" name="productimage" id="upload" multiple><br>
     </div>
         <input type="submit" class="btn btn-primary">
   </form>
@@ -92,7 +99,7 @@ body {
 form, .content {
   width: 30%;
   margin: 0px auto;
-  padding: 20px;
+  padding:20px;
   border: 1px solid #B0C4DE;
   background: white;
   border-radius: 0px 0px 10px 10px;
