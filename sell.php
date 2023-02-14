@@ -14,7 +14,7 @@
     VALUES('$category','$title', '$description', '$price','$phonenumber','$productimage');";
 
 
-   
+
   ?>
  
 
