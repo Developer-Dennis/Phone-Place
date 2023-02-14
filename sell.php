@@ -10,8 +10,8 @@
   $location = $_POST['location'];
   $productimage = $_POST['productimage']; 
 
-  $query = "INSERT INTO phones (category, title, description, price, phonenumber, location, productimage)
-    VALUES('$category','$title', '$description', '$price','$phonenumber','$productimage');";
+  $query = "INSERT INTO phones (category, title, description, price, phonenumber, location, productimage,)
+    VALUES('$category','$title','$description','$price','$phonenumber','$productimage');"
 
   ?>
  
