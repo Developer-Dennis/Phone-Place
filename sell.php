@@ -1,4 +1,5 @@
 <?php
+error_reporting(0); 
   include('navbar.php');
   include('connection.php');
 
@@ -11,7 +12,7 @@
   $productimage = $_POST['productimage']; 
 
   $query = "INSERT INTO phones (category, title, description, price, phonenumber, location, productimage,)
-    VALUES('$category','$title','$description','$price','$phonenumber','$productimage');"
+    VALUES('$category','$title','$description','$price','$phonenumber','$productimage');";
 
   ?>
  
