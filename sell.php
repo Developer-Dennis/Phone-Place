@@ -3,15 +3,16 @@ error_reporting(0);
   include('navbar.php');
   include('connection.php');
 
-  $category = $_REQUEST['category'];
-  $title = $_REQUEST['title'];
-  $description = $_REQUEST['description'];
-  $price = $_REQUEST['price'];
-  $phonenumber = $_REQUEST['phonenumber'];
-  $location = $_REQUEST['location'];
-  $productimage = $_REQUEST['productimage']; 
+  $category = $_POST['category'];
+  $title = $_POST['title'];
+  $description = $_POST['description'];
+  $price = $_POST['price'];
+  $phonenumber = $_POST['phonenumber'];
+  $location = $_POST['location'];
+  $productimage = $_POST['productimage']; 
 
-  $query = "INSERT INTO phones VALUES('$category','$title','$description','$price','$phonenumber','$productimage')";
+  $query = "INSERT INTO phones (category, title, description, price, phonenumber, location, productimage,)
+    VALUES('$category','$title','$description','$price','$phonenumber','$productimage');";
 
   ?>
  
